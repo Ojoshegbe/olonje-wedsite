@@ -124,7 +124,7 @@ header .nev-tage a:hover{
 
 .phone-page .phone1{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     animation: Myanime 2s alternate-reverse .5s infinite;
@@ -132,7 +132,7 @@ header .nev-tage a:hover{
 
 @keyframes Myanime {
     from{
-        top: 100%;
+        top: 160%;
 /*         transform: translate(-50%, -50%) scale(1); */
     }
 
@@ -318,7 +318,7 @@ hr{
     }
 
     .phone-page .phone1{
-        top: 130%;
+        top: 140%;
         width: 35.5rem;
 /*       transform: translate(-50%, -50%) scale(0.8); */
     }
@@ -326,12 +326,12 @@ hr{
 
 @keyframes Myanime {
     from{
-        top: 110%;
+        top: 160%;
 /*         transform: translate(-50%, -50%) scale(0.9); */
     }
 
     to{
-        top: 130%;
+        top: 140%;
     }
 }
 
