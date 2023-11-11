@@ -319,8 +319,8 @@ hr{
 
     .phone-page .phone1{
         top: 140%;
-        width: 35.5rem;
-/*       transform: translate(-50%, -50%) scale(0.8); */
+/*         width: 30.5rem; */
+      transform: translate(-50%, -50%) scale(0.5);
     }
 
 
