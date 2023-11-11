@@ -124,20 +124,20 @@ header .nev-tage a:hover{
 
 .phone-page .phone1{
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.8);
     animation: Myanime 2s alternate-reverse .5s infinite;
 }
 
 @keyframes Myanime {
     from{
-        top: 90%;
+        top: 100%;
         transform: translate(-50%, -50%) scale(1);
     }
 
     to{
-        top: 100%;
+        top: 130%;
     }
 }
 
@@ -202,7 +202,7 @@ hr{
     color: white;
     text-align: center;
     line-height: 30px;
-    background-image: url(/assets/images/Rectangle\ 47.png);
+    background-image: url(pics/Rectangle\ 47.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
