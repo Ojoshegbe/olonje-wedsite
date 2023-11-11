@@ -318,9 +318,22 @@ hr{
     }
 
     .phone-page .phone1{
-        top: 120%;
-        width: 35.5rem;
+        top: 130%;
+/*         width: 35.5rem; */
+      transform: translate(-50%, -50%) scale(0.7);
     }
+
+
+@keyframes Myanime {
+    from{
+        top: 110%;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    to{
+        top: 130%;
+    }
+}
 
     .intro-page{
         color: var(--textColor);
