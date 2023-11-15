@@ -157,7 +157,6 @@ header .nev-tage a:hover{
 
 .second-page{
     width: 100vw;
-    /* background-color: red; */
 
 }
 .second-page h1{
@@ -182,7 +181,7 @@ hr{
 
 .info-account, .info-account1{
     transition: all 1s ease-out;
-    transform: scale(.8);
+    transform: scale(0.7);
 }
 .info-account:hover, .info-account1:hover {
      transform: scale(1);
@@ -402,6 +401,9 @@ hr{
         top: 20rem;
         margin: 0;
     }
+  .info-account:hover, .info-account1:hover {
+     transform: scale(0.7);
+}
 
 }
 
