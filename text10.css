@@ -6,6 +6,10 @@
     --textColor: #252B42;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 html{
     font-family: 'Poppins', sans-serif;
@@ -14,9 +18,6 @@ html{
     text-transform: capitalize;
     scroll-behavior: smooth;
     color: var(--textColor);
-    /* box-sizing: border-box; */
-    margin: 0;
-    padding: 0;
 }
 
 header{
@@ -42,15 +43,12 @@ header .header-info .olonje{
     align-items: center;
     list-style-type: none;
     text-decoration: none;
-    margin-right: 5rem;
-    font-size: 1rem;
+    margin-right: 6rem;
     font-weight: bold;
 }
 
-.fas{
+.icon{
     display: none;
-    font-size: 2rem;
-    color: rgb(175, 165, 165);
 }
 
 header .nev-tage a{
@@ -66,12 +64,12 @@ header .nev-tage a:hover{
 /* first body interface */
 
  .img{
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 674px;
+    object-fit: cover;
+    margin: 0;
     top: 0;
-    left: 0;
-    padding: 0;
 }
 
 .intro-page{
@@ -133,7 +131,7 @@ header .nev-tage a:hover{
 @keyframes Myanime {
     from{
         top: 90%;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(.9);
     }
 
     to{
@@ -145,7 +143,7 @@ header .nev-tage a:hover{
     border-bottom: 3px solid #eaeaea;
     width: 50%;
     text-align: center;
-    margin-top: 40rem;
+    margin-top: 30rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -157,7 +155,6 @@ header .nev-tage a:hover{
 
 .second-page{
     width: 100vw;
-    /* background-color: red; */
 
 }
 .second-page h1{
@@ -185,7 +182,8 @@ hr{
     transform: scale(.8);
 }
 .info-account:hover, .info-account1:hover {
-     transform: scale(1);
+     transform: scale(.9
+     );
 }
 .content p{
     color: var(--hdcolor);
@@ -262,23 +260,16 @@ hr{
 
 
 /* the @media quaries css */
-
-@media (min-width:601px) and (max-width:900px) {
+@media (max-width:600px) {
     header .header-info .olonje{
         width: 50%;
-    }
-}
-
-@media (max-width:600px) {
-
-    .header-info .olonje{
-        width: 50%;
+        margin-left: 1rem;
     }
 
-
-    .fas{
+    .icon{
         display: block;
-        margin-right: 5rem;
+        margin-right: 3rem;
+        font-size: 2rem;
     }
 
     .nev-tage{
@@ -319,10 +310,11 @@ hr{
 
     .phone-page .phone1{
         top: 120%;
-        width: 35.5rem;
+        width: 25rem;
     }
 
     .intro-page{
+        top: 8rem;
         color: var(--textColor);
     }
     
@@ -361,6 +353,14 @@ hr{
         text-align: center;
         margin: 0 auto;
     }
+
+    .info-account:hover {
+        transform: translateX(-13%) scale(.8);
+   }
+
+   .info-account1:hover{
+    transform: translateX(-10%) scale(.8);
+   }
     .footer{
         display: block;
         text-align: center;
@@ -380,14 +380,18 @@ hr{
 
      .cont1{
         position: relative;
-        top: -30rem;
-        margin: 0;
+        top: -45rem;
     }
 
     .info-account{
         position: relative;
-        top: 20rem;
-        margin: 0;
+        top: 12.5rem;
+        text-align: center;
+        transform: translateX(-13%) scale(.8);
+    }
+
+  .info-account1{
+        transform: translateX(-10%) scale(.8);
     }
 
 }
