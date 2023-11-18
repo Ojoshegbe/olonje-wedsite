@@ -6,7 +6,9 @@
     --textColor: #252B42;
 
 }
-*{
+
+body{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -18,6 +20,7 @@ html{
     text-transform: capitalize;
     scroll-behavior: smooth;
     color: var(--textColor);
+    box-sizing: border-box;
 }
 
 header{
@@ -34,7 +37,7 @@ header{
 }
 
 header .header-info .olonje{
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 .nev-tage{
     display: flex;
@@ -43,8 +46,8 @@ header .header-info .olonje{
     align-items: center;
     list-style-type: none;
     text-decoration: none;
-    margin-right: 6rem;
-    font-weight: bold;
+    margin-right: 5rem;
+    font-weight: 500;
 }
 
 .icon{
@@ -64,9 +67,9 @@ header .nev-tage a:hover{
 /* first body interface */
 
  .img{
-    width: 100%;
+    width: 100vw;
     position: relative;
-    height: 674px;
+    height: 600px;
     object-fit: cover;
     margin: 0;
     top: 0;
@@ -90,13 +93,12 @@ header .nev-tage a:hover{
 }
 
 .intro-page button{
-    font-size: large;
-    font-weight: bolder;
+    font-weight: bold;
     border: none;
-    padding: 15px 50px;
+    padding: 15px 40px;
     border-radius: 1.5rem;
     text-transform: capitalize;
-    margin: 2rem 1rem;
+    margin: 2rem .8rem;
     transition: all .3s ease-out;
 }
 
@@ -106,7 +108,7 @@ header .nev-tage a:hover{
 }
 .playstore:hover{
     background: transparent;
-    outline: 2px solid var(--hdcolor);
+    outline: 1px solid var(--hdcolor);
 }
 .app-store{
     background: transparent;
@@ -122,20 +124,20 @@ header .nev-tage a:hover{
 
 .phone-page .phone1{
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
-    animation: Myanime 2s alternate-reverse .5s infinite;
+    transform: translate(-50%, -50%) scale(0.7);
+    animation: Myanime 1.2s alternate-reverse infinite;
 }
 
 @keyframes Myanime {
     from{
-        top: 90%;
-        transform: translate(-50%, -50%) scale(.9);
+        top: 110%;
+        transform: translate(-50%, -50%) scale(.7);
     }
 
     to{
-        top: 100%;
+        top: 115%;
     }
 }
 
@@ -152,11 +154,6 @@ header .nev-tage a:hover{
 
 
 /* second section css styleling */
-
-.second-page{
-    width: 100vw;
-
-}
 .second-page h1{
     text-align: center;
     margin-top: 3rem;
@@ -174,16 +171,15 @@ hr{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    align-self: center;   
+    align-self: center;
 }
 
 .info-account, .info-account1{
     transition: all 1s ease-out;
-    transform: scale(.8);
+    transform: scale(0.6);
 }
 .info-account:hover, .info-account1:hover {
-     transform: scale(.9
-     );
+     transform: scale(.7);
 }
 .content p{
     color: var(--hdcolor);
@@ -200,7 +196,7 @@ hr{
     color: white;
     text-align: center;
     line-height: 30px;
-    background-image: url(/assets/images/Rectangle\ 47.png);
+    background-image: url(pics/Rectangle\ 47.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -256,20 +252,16 @@ hr{
 
 
 
+/* @media quary css form */
 
+@media screen and (max-width:600px) {
+    body{
+        font-size: 12px;
+    }
 
-
-/* the @media quaries css */
-@media (max-width:600px) {
     header .header-info .olonje{
         width: 50%;
         margin-left: 1rem;
-    }
-
-    .icon{
-        display: block;
-        margin-right: 3rem;
-        font-size: 2rem;
     }
 
     .nev-tage{
@@ -280,8 +272,8 @@ hr{
         padding: 20px 30px;
         line-height: 2rem;
         top: 5rem;
-        right: -10rem;
-        transform: scale(0.4);
+        right: -8rem;
+        transform: scale(0.2);
         visibility: hidden;
         border-radius: .9rem;
         font-weight: bold;
@@ -297,6 +289,12 @@ hr{
         visibility: hidden;
     }
 
+    .icon{
+        display: block;
+        margin-right: 3rem;
+        font-size: 2rem;
+    }
+
      .active{
         visibility: visible;
         right: 0rem;
@@ -306,11 +304,6 @@ hr{
 
      .img{
         visibility: hidden;
-    }
-
-    .phone-page .phone1{
-        top: 120%;
-        width: 25rem;
     }
 
     .intro-page{
@@ -343,6 +336,25 @@ hr{
         background: var(--hdcolor);
         color: white;
     }
+    .phone-page .phone1{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.7);
+        animation: Myanime 1.2s alternate-reverse infinite;
+    }
+
+    @keyframes Myanime {
+        from{
+            top: 90%;
+            transform: translate(-50%, -50%) scale(0.7);
+        }
+    
+        to{
+            top: 100%;
+        }
+    }
+    
 
     hr{
         display: block;
@@ -355,11 +367,11 @@ hr{
     }
 
     .info-account:hover {
-        transform: translateX(-13%) scale(.8);
+        transform: translateX(-13%) scale(.6);
    }
 
    .info-account1:hover{
-    transform: translateX(-10%) scale(.8);
+    transform: translateX(-10%) scale(.6);
    }
     .footer{
         display: block;
@@ -376,8 +388,6 @@ hr{
        background: var(--textColor);
     }
 
-    /* extreme editing phace */
-
      .cont1{
         position: relative;
         top: -45rem;
@@ -387,12 +397,11 @@ hr{
         position: relative;
         top: 12.5rem;
         text-align: center;
-        transform: translateX(-13%) scale(.8);
+        transform: translateX(-13%) scale(.6);
     }
 
   .info-account1{
-        transform: translateX(-10%) scale(.8);
+        transform: translateX(-10%) scale(.6);
     }
-
 }
 
