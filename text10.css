@@ -4,7 +4,6 @@
 :root{
     --hdcolor: #FA4A0C;
     --textColor: #252B42;
-
 }
 
 body{
@@ -340,14 +339,14 @@ hr{
         position: absolute;
         top: 90%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.7);
+        transform: translate(-50%, -50%) scale(0.5);
         animation: Myanime 1.2s alternate-reverse infinite;
     }
 
     @keyframes Myanime {
         from{
             top: 90%;
-            transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.5);
         }
     
         to{
